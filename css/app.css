@@ -59,6 +59,22 @@ nav ul {
 nav ul li {
 	color: var(--text-color);
 	cursor: pointer;
+	transition: all ease-in 0.1s;
+}
+
+a {
+	transition: all ease-in 0.1s;
+}
+
+nav ul li:hover,
+nav ul li:focus,
+a:hover,
+a:focus {
+	color: #e4cfff;
+	border-color: #d8dda3;
+	box-shadow: 0 0.5em 0.5em -0.4em #d8dda3;
+	transform: translateY(-0.25em);
+	cursor: pointer;
 }
 
 .container {
@@ -96,11 +112,28 @@ nav ul li {
 	}
 }
 
+header {
+	display: flex;
+	min-width: 450px;
+	width: 35vw;
+	margin-bottom: 1.4em;
+}
+
+.iz {
+	display: fixed;
+	flex: 1;
+	min-height: 10px;
+}
+
 @media (max-width: 576px) {
 	body {
 		font-size: 20px;
 	}
 	nav ul {
 		flex-direction: column;
+	}
+
+	header {
+		width: 90vw;
 	}
 }
