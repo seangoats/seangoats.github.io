@@ -117,12 +117,6 @@ header {
 	margin-bottom: 1.4em;
 }
 
-.iz {
-	display: fixed;
-	flex: 1;
-	min-height: 10px;
-}
-
 @media (max-width: 576px) {
 	body {
 		font-size: 20px;
